@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1400px;
+  width: 100%;
+  user-select: none;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  padding: 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  padding: 12px 35px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.change {
+  max-width: 100%;
+}
+
+.change__after {
+  display: none;
+}
+
+.duration {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: rgb(230, 62, 62);
+  text-align: center;
+}
+
+.lose {
+  display: none;
+}
+
+.lose__text {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: rgb(230, 62, 62);
+}
+
+.lose__button {
+  display: flex;
+  padding: 12px 35px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: #5baced;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 1140px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  color: transparent;
+  background-color: orange;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+
+.card.open {
+  background-color: #5baced;
+  color: white;
+  cursor: default;
+}
+
+.card.success {
+  background-color: green;
+  color: white;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+.button__success {
+  display: flex;
+  padding: 12px 35px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 17px;
+  background-color: orange;
+  cursor: pointer;
+}
